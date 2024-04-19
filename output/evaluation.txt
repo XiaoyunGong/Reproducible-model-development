@@ -1,0 +1,5 @@
+AUC on test: 1.000
+Accuracy on test: 0.995
+                 Predicted negative  Predicted positive
+Actual negative                 421                   0
+Actual positive                   4                 394

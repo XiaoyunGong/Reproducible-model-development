@@ -1,0 +1,19 @@
+my_train_test_split:
+  test_size: 0.4
+  random_state: 42
+
+train:
+  initial_features:
+    - log_entropy
+    - IR_norm_range
+    - entropy_x_contrast
+  n_estimators: 10
+  random_state: 42
+  max_depth: 10
+
+predict:
+  initial_features:
+    - log_entropy
+    - IR_norm_range
+    - entropy_x_contrast
+

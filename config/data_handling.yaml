@@ -1,0 +1,40 @@
+clean:
+  columns:
+    - visible_mean
+    - visible_max
+    - visible_min
+    - visible_mean_distribution
+    - visible_contrast
+    - visible_entropy
+    - visible_second_angular_momentum
+    - IR_mean
+    - IR_max
+    - IR_min
+  first_cloud_start: 53
+  first_cloud_end: 1077
+  second_cloud_start: 1082
+  second_cloud_end: 2105
+feature_eng:
+  columns:
+    - visible_mean
+    - visible_max
+    - visible_min
+    - visible_mean_distribution
+    - visible_contrast
+    - visible_entropy
+    - visible_second_angular_momentum
+    - IR_mean
+    - IR_max
+    - IR_min
+  log_column: visible_entropy
+  log_column_new: log_entropy
+  mult_col_1: visible_contrast
+  mult_col_2: visible_entropy
+  mult_new_col: entropy_x_contrast
+  sub_col_1: IR_max
+  sub_col_2: IR_min
+  sub_new_col: IR_range
+  nr_col_1: IR_max
+  nr_col_2: IR_min
+  nr_col_3: IR_mean
+  nr_col_new: IR_norm_range
